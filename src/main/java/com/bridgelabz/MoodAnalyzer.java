@@ -6,15 +6,15 @@ public class MoodAnalyzer {
         message = input;
     }
 
-    public String analyseMood()  {
+    public String analyseMood()  throws MoodException {
         try {
             if (message.contains("Sad")) {
                 return "SAD";
-            } else {
+            }else{
                 return "HAPPY";
             }
-        } catch (NullPointerException e){
-            return "HAPPY";
+        } catch (NullPointerException e) {
+            throw new MoodException("Please enter proper message");
         }
     }
 
