@@ -2,7 +2,7 @@ plugins {
     id 'java'
 }
 
-group 'com.bridgelabz.moodanalyser'
+group 'com.bridgelabz.MoodAnalyzer'
 version '1.0-SNAPSHOT'
 
 repositories {
